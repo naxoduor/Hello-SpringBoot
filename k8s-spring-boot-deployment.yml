@@ -24,6 +24,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: devops-tools
+  annotations:
+    prometheus.io/scrape: 'true'
+    prometheus.io/path: /
+    prometheus.io/port: '8080'
   name: naxoduor-springboot
 spec:
   type: NodePort
