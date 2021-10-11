@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: naxoduor-springboot
+  namespace: devops-tools
 spec:
-  securityContext:
-    runAsUser: 0
   replicas: 3
   selector:
     matchLabels:
@@ -14,6 +13,10 @@ spec:
       labels:
         app: naxoduor-springboot
     spec:
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 1000
+      serviceAccountName: jenkins-admin
       containers:
         - name: springboot
           image: naxoduor/nax-docker-demo:nax-docker-demo
