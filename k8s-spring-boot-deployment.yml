@@ -26,6 +26,6 @@ spec:
     app: naxoduor-springboot
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
-      nodePort: 30005
+      port: 8081
+      targetPort: 8081
+      nodePort: 30006

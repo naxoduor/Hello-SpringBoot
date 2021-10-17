@@ -1,13 +1,13 @@
-package com.jhooq.demo.Jhooqdockerdemo;
+package com.demo.dockerdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JhooqDockerDemoApplication {
+public class DockerDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JhooqDockerDemoApplication.class, args);
+		SpringApplication.run(DockerDemoApplication.class, args);
 	}
 
 }

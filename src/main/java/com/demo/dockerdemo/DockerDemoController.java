@@ -1,13 +1,13 @@
-package com.jhooq.demo.Jhooqdockerdemo;
+package com.demo.dockerdemo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class JhooqDockerDemoController {
+public class DockerDemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Docker Demo - Hello Jhooq";
+        return "Docker Demo - Sample Api";
     }
 }
