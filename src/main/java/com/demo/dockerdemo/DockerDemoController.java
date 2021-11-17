@@ -25,5 +25,10 @@ public class DockerDemoController {
         return "Return all qes";
     }
 
+    @GetMapping("/good")
+    public String good() {
+        return "Return very nicw";
+    }
+
 
 }
