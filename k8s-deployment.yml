@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: naxoduor/nax-docker-demo:nax-docker-demo
+          image: naxoduor/nax-docker-demo:latest
       serviceAccountName: jenkins
 ---
 apiVersion: v1
