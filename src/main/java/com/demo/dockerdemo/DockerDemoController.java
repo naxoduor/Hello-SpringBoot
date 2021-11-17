@@ -14,4 +14,11 @@ public class DockerDemoController {
     public String api() {
         return "Spring Boot Rest API";
     }
+
+    @GetMapping("/name")
+    public String name() {
+        return "Spring Boot Rest API";
+    }
+    
+
 }
