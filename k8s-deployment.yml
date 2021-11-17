@@ -11,10 +11,12 @@ spec:
     metadata:
       labels:
         app: naxoduor-springboot
+      namespace: jenkins
     spec:
       containers:
         - name: springboot
           image: naxoduor/nax-docker-demo:nax-docker-demo
+      serviceAccountName: jenkins
 ---
 apiVersion: v1
 kind: Service
